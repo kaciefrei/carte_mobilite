@@ -80,6 +80,14 @@ def create_map(df, circle_size, circle_color, region_width, region_color):
     m.save(map_html)
     return map_html
 
+# Configuration de la page : titre et icône
+st.set_page_config(
+    page_title="Analyse de Mobilité BFC",  # Le titre de la page dans l'onglet
+    page_icon="icon.jpg",  # L'icône de la page (peut être un emoji ou le chemin vers un fichier image)
+    layout="centered",  # (optionnel) Change la disposition de la page
+    initial_sidebar_state="expanded"  # (optionnel) État initial de la barre latérale
+)
+
 # Streamlit interface
 st.title("Analyse de Mobilité BFC 🌍")
 
